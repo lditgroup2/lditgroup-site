@@ -53,7 +53,7 @@
     .hud-ring2{inset:10%;border:1px dashed rgba(255,255,255,.12);border-left-color:rgba(255,154,61,.55);animation:idleSpinReverse 5.6s linear infinite paused}
     .scan{position:absolute;inset:-1%;border-radius:50%;border:2px solid transparent;border-top-color:rgba(255,116,17,.98);filter:drop-shadow(0 0 7px rgba(255,105,0,.8));opacity:0;pointer-events:none}
     .pulse{position:absolute;inset:18%;border-radius:50%;border:1px solid rgba(255,115,18,.65);opacity:0;pointer-events:none}
-    .hud-label{position:absolute;font-size:9px;letter-spacing:.2em;color:rgba(255,177,103,.82);border:1px solid rgba(255,130,38,.18);padding:6px 8px;border-radius:999px;background:rgba(3,3,3,.68);backdrop-filter:blur(8px);box-shadow:0 0 18px rgba(255,106,0,.06);opacity:0;transition:.35s;pointer-events:none}.h1a{top:15%;right:2%}.h2a{bottom:19%;right:0}.h3a{bottom:11%;left:8%}.h4a{top:22%;left:2%}
+    .hud-label{position:absolute;z-index:6;font-size:9px;letter-spacing:.16em;color:rgba(255,190,126,.94);border:1px solid rgba(255,130,38,.28);padding:6px 9px;border-radius:999px;background:rgba(8,4,1,.84);backdrop-filter:blur(8px);box-shadow:0 0 18px rgba(255,106,0,.1);opacity:0;transition:.35s;pointer-events:none;white-space:nowrap}.h1a{top:0;right:4%}.h2a{bottom:0;right:4%}.h3a{bottom:0;left:4%}.h4a{top:0;left:4%}
     .status-dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--orange);box-shadow:0 0 9px var(--orange);margin-right:6px}
     .core-stage:is(:hover,:focus-visible,.is-active){transform:scale(1.045);filter:drop-shadow(0 0 18px rgba(255,106,0,.28)) drop-shadow(0 0 50px rgba(255,106,0,.12))}
     .core-stage:is(:hover,:focus-visible,.is-active)::before{inset:1%;background:radial-gradient(circle,rgba(255,106,0,.23),rgba(255,106,0,.06) 48%,transparent 70%);filter:blur(20px)}
@@ -110,8 +110,8 @@
 
       <div class="core-stage reveal" id="core" tabindex="0" aria-label="Núcleo visual interativo da LDIT. Passe o mouse ou use o foco para ativar.">
         <div class="hud-ring"></div><div class="hud-ring2"></div><div class="scan"></div><div class="pulse"></div>
-        <div class="hud-label h1a"><span class="status-dot"></span>SYSTEM ONLINE</div>
-        <div class="hud-label h2a">AI CORE</div><div class="hud-label h3a">AUTOMATION</div><div class="hud-label h4a">INFRASTRUCTURE</div>
+        <div class="hud-label h1a"><span class="status-dot"></span>SISTEMA ONLINE</div>
+        <div class="hud-label h2a">NÚCLEO DE IA</div><div class="hud-label h3a">AUTOMAÇÃO</div><div class="hud-label h4a">INFRAESTRUTURA</div>
         <div class="core-video-wrap">
           <video id="coreVideo" autoplay muted loop playsinline preload="auto" poster="assets/ldit-logo.png">
             <source src="assets/ldit-core.mp4" type="video/mp4" />
